@@ -1,0 +1,18 @@
+<!-- <div class="wrapper">
+    <div class="content">
+        <div class="card" *ngFor="let i of items"></div>
+    </div>
+</div> -->
+<h2>{{title.title}}</h2>
+<div>
+   
+    <div class="card" *ngFor="let p of _birdslist$|async" >
+        <div>
+            {{p.name}}
+        </div>
+        
+        <div>
+            <img [src]="p.image" [alt]="p.name" srcset="">
+        </div>
+    </div>
+</div>

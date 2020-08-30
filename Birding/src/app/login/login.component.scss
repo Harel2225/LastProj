@@ -1,0 +1,26 @@
+body{
+    margin: auto;
+}
+.wrapper{
+    width: 60vw;
+    border: 1px solid grey;
+    min-height: 40vh;
+    margin: auto;
+    border-radius: 10px;
+    place-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,99,192,1) 31%,
+     rgba(0,212,255,0.829059829059829) 100%);
+}
+label {
+    color: white;
+    font-weight: 700;
+}
+input {
+    margin: auto;
+    opacity: 80%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+}

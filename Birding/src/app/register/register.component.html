@@ -1,0 +1,23 @@
+<div class="wrapper">
+
+    <h2>הרשמה</h2>
+    <form [formGroup]="rForm" (submit)="register()">
+        <epr-input *ngFor="let i of inputs" [config]="i" [formControlName]="i.formControlName"></epr-input>
+
+ 
+
+        <div class="action">
+            <button [disabled]="!rForm.valid">{{btn.ok | titlecase}}</button>
+            <button (click)="$event.preventDefault();cancel()">{{btn.cancel | titlecase}}</button>
+        </div>
+
+    </form>
+    
+    <div>
+        {{rForm.value|json}}
+    </div>
+    <div>
+        {{msgError}}
+    </div>
+
+</div>

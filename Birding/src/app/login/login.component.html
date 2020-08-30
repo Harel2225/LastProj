@@ -1,0 +1,16 @@
+<h1 class="title">{{title.title}}</h1>
+<form  #loginForm="ngForm" (submit)="submit(loginForm.value)">
+    <div class="wrapper">
+        <div class="user">
+            <label for="username">{{form.username}}</label>
+            <input type="text" required minlength="2" name="username" ngModel>
+        </div>
+        <div class="password">
+            <label for="password">{{form.password}}</label>
+            <input type="password" required minlength="4" name="password" ngModel>
+        </div>
+        <button [disabled]="!loginForm.valid">{{form.login}}</button>
+        
+    </div>
+    
+</form>
