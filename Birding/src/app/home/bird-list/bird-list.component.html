@@ -3,16 +3,22 @@
         <div class="card" *ngFor="let i of items"></div>
     </div>
 </div> -->
+<app-navbar></app-navbar>  
+<div class="title">
 <h2>{{title.title}}</h2>
+</div>
 <div>
-   
-    <div class="card" *ngFor="let p of _birdslist$|async" >
-        <div>
-            {{p.name}}
-        </div>
-        
-        <div>
-            <img [src]="p.image" [alt]="p.name" srcset="">
+   <div class="wrapper">
+
+       <div class="card" *ngFor="let p of _birdslist$|async" >
+           <div>
+               <h4 class="cardTitle">{{p.name}}</h4>
+            </div>
+            
+            <div>
+                <img [src]="p.img" [alt]="p.name" srcset="">
+            </div>
+            <button class="addWatch">{{title.addWatch}}</button>
         </div>
     </div>
 </div>

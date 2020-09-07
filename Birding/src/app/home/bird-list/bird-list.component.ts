@@ -12,9 +12,10 @@ import { BirdService } from 'src/app/bird.sevice';
 })
 export class BirdListComponent implements OnInit {
   title = {
-    title: "הציפורים שלנו"
-  }
-   _birdslist$ = new ReplaySubject<IBird[]>(1);
+    title: 'הציפורים שלנו',
+    addWatch: 'הוסף תצפית',
+  };
+  _birdslist$ = new ReplaySubject<IBird[]>(1);
   // public get _birdslist$(): Observable<IBird[]> {
   //   // return this._employees$;
   //   return this._birdslist$.asObservable();

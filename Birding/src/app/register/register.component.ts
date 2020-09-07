@@ -20,7 +20,7 @@ export class RegisterComponent implements OnInit {
     register: 'עוד לא רשום? הרשם כאן'
   };
   msgError: string;
-  constructor(private fs: FormService) { }
+  constructor(private fs: FormService, private userService: UserService) { }
 
   ngOnInit() {
   }
@@ -28,8 +28,12 @@ export class RegisterComponent implements OnInit {
   cancel() {
     this.rForm.reset();
   }
-  register() {
-console.log('hey ther new dude');
+  register(value) {
+    console.log('hey therק new dude');
+    this.userService.register(value).subscribe(res => {
+      console.log('response from server', res);
+
+    });
 
   }
 }

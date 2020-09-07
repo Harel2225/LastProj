@@ -1,7 +1,7 @@
 <div class="wrapper">
 
     <h2>הרשמה</h2>
-    <form [formGroup]="rForm" (submit)="register()">
+    <form [formGroup]="rForm" (submit)="register(rForm.value)">
         <epr-input *ngFor="let i of inputs" [config]="i" [formControlName]="i.formControlName"></epr-input>
 
  

@@ -14,6 +14,10 @@ import { InputModule } from '../input/input.module';
 import { RegisterComponent } from './register/register.component';
 import { CommonModule } from '@angular/common';
 import { BirdListComponent } from './home/bird-list/bird-list.component';
+import { AddAreaComponent } from './home/add-area/add-area.component';
+import { AddBirdComponent } from './home/add-bird/add-bird.component';
+import { AddSpotComponent } from './home/add-spot/add-spot.component';
+import { SpotListComponent } from './home/spot-list/spot-list.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,10 @@ import { BirdListComponent } from './home/bird-list/bird-list.component';
     NavbarComponent,
     RegisterComponent,
     BirdListComponent,
+    AddAreaComponent,
+    AddBirdComponent,
+    AddSpotComponent,
+    SpotListComponent,
   ],
   imports: [
     CommonModule,
